@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "Test1.Controllers.FieldsController",
+    "Method": "GetAllFields",
+    "RelativePath": "api/fields",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test1.Controllers.FieldsController",
+    "Method": "GetFieldSize",
+    "RelativePath": "api/fields/{id}/size",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test1.Controllers.FieldsController",
+    "Method": "FindFieldContainingPoint",
+    "RelativePath": "api/fields/contains",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test1.Models.PointInPolygonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test1.Controllers.FieldsController",
+    "Method": "CalculateDistance",
+    "RelativePath": "api/fields/distance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test1.Models.DistanceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

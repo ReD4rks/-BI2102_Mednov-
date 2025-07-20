@@ -1,0 +1,28 @@
+@Test1_HostAddress = http://localhost:5000
+
+### 1. Получить все поля
+GET {{Test1_HostAddress}}/api/fields
+Accept: application/json
+
+### 2. Получить размер поля по ID
+GET {{Test1_HostAddress}}/api/fields/1/size
+Accept: application/json
+
+### 3. Рассчитать расстояние от центра поля до точки
+POST {{Test1_HostAddress}}/api/fields/distance
+Content-Type: application/json
+
+{
+  "latitude": 45.7,
+  "longitude": 41.34,
+  "fieldId": 1
+}
+
+### 4. Проверить принадлежность точки к полю
+POST {{Test1_HostAddress}}/api/fields/contains
+Content-Type: application/json
+
+{
+  "latitude": 45.7074047669366,
+  "longitude": 41.3346809239899
+}
